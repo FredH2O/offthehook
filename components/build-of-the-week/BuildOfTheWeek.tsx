@@ -1,34 +1,41 @@
 const BuildOfTheWeek = () => {
   return (
-    <section>
+    <section className="grid grid-cols-2 container m-auto space-x-50">
       {/* killer */}
 
-      <div>
+      <div className="space-y-5">
         <div>
-          <ul>
+          <h3 className="text-4xl">Killer</h3>
+          <ul className="flex space-x-3">
             <li>Fire Up</li>
             <li>Brutal Strength</li>
             <li>Nowhere to Hide</li>
             <li>Bamboozle</li>
           </ul>
         </div>
+
+        {/* description */}
         <div>
           <p>
-            This build specialises in vaulting, kicking generators to see
-            survivors, ending chase time by almost 80%, pros of this build is
-            you can chase survivors fast, find them fast just by looking for
-            generators being done. cons is that at the start of the trial
-            survivors can do gens straight away without corrupt intervention,
-            not much slow down, and can only kick generators a certain amount of
-            time. overall this build is good for almost every killer in the game
-            specially M1 killers.
+            This build specializes in vaulting speed and generator control. By
+            kicking generators, you can reveal survivors locations and
+            drastically reduce chase time — by up to 80%. The pros? You’ll find
+            survivors fast and end chases even faster, simply by tracking which
+            gens are being worked on. However, there are a few cons. Without
+            Corrupt Intervention, survivors can start doing gens immediately.
+            There’s also not much slowdown built into the kit, and your ability
+            to kick generators is limited. Overall, this build works well with
+            nearly every killer in the game — especially M1-based killers. Fire
+            Up becomes more powerful as the trial progresses, making you
+            increasingly lethal in the late game.
           </p>
         </div>
       </div>
       {/* survivor */}
 
-      <div>
+      {/* <div>
         <div>
+          <h3>Survivor</h3>
           <ul>
             <li>Finesse</li>
             <li>Kindred</li>
@@ -38,18 +45,21 @@ const BuildOfTheWeek = () => {
         </div>
         <div>
           <p>
-            This build specialises in chase time, squeezing every little seconds
-            you can from a killer so that your team mates can do generators.
-            Lithe for running away after a vault, Resilience speeds up your
-            vaulting and Finesse for that fast vault at the start. pros is if
-            your good with loops and vaulting then this build can be lethal even
-            when youre injured. cons is that if your injured finesse wont work
-            and resilience doesnt work when youre healthy. but this build
-            balances everything against almost every situation. Kindred is our
-            main aura reading unless its a stealth killer.
+            This build specializes in chase efficiency, squeezing out every
+            precious second to buy your teammates time to complete generators.
+            Lithe gives you a burst of speed after a vault, Resilience boosts
+            your vault speed when youre injured, and Finesse helps you secure
+            those lightning-fast vaults early on. Pros: If you’re confident with
+            loops and timing your vaults, this build can be absolutely lethal —
+            even while injured. Cons: Finesse doesn’t activate when youre
+            injured, and Resilience only works when youre not at full health —
+            so there’s a bit of trade-off depending on your state. Overall, this
+            build offers solid versatility for almost every situation. Kindred
+            provides essential aura reading — unless youre up against a stealth
+            killer, in which case... well, may the Entity have mercy.
           </p>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
