@@ -1,4 +1,4 @@
-import { killerBuilds } from "@/data/killerBuilds";
+import { killerBuilds, type KillerBuild } from "@/data/killerBuilds";
 
 const BuildOfTheWeek = () => {
   return (
@@ -7,8 +7,8 @@ const BuildOfTheWeek = () => {
 
       <div className="space-y-8">
         {killerBuilds
-          .filter((element, index) => [2, 3].includes(index))
-          .map((build, index) => (
+          .filter((_: KillerBuild, index: number) => [2, 3].includes(index))
+          .map((build: KillerBuild, index: number) => (
             <div
               key={index}
               className="p-4 border border-gray-700/80 rounded-md bg-black/50 backdrop-blur-sm"

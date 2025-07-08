@@ -1,4 +1,10 @@
-export const killerBuilds = [
+export type KillerBuild = {
+  name: string;
+  perks: string[];
+  description: string;
+};
+
+export const killerBuilds: KillerBuild[] = [
   {
     name: "Kick and Vault Speed Build (ALL)",
     perks: ["Fire Up", "Brutal Strength", "Nowhere to Hide", "Bamboozle"],
