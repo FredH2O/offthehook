@@ -5,7 +5,7 @@ const Navigation = ["Home", "Poll", "About"];
 
 const Nav = () => {
   return (
-    <nav className="fixed top-0 w-full flex justify-evenly items-center">
+    <nav className="fixed z-10 top-0 w-full flex justify-evenly items-center">
       <div className="flex items-center">
         <Image
           className="p-3"
@@ -14,7 +14,7 @@ const Nav = () => {
           width={100}
           height={100}
         />
-        <h2 className="text-2xl italic font-extralight">offthehook</h2>
+        <h2 className="text-xl font-bold">Off the Hook</h2>
       </div>
 
       <div>
