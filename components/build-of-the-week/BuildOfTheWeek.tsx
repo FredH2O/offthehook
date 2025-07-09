@@ -1,4 +1,5 @@
 import { killerBuilds, type KillerBuild } from "@/data/killerBuilds";
+import { survivorBuilds, type SurvivorBuild } from "@/data/survivorBuilds";
 
 const BuildOfTheWeek = () => {
   return (
@@ -39,6 +40,38 @@ const BuildOfTheWeek = () => {
       </div>
 
       {/* survivor */}
+      <div className="space-y-8">
+        {survivorBuilds
+          .filter((_: SurvivorBuild, index: number) => [0, 2].includes(index))
+          .map((build, index) => (
+            <div
+              key={index}
+              className="p-4 border border-green-700/80 rounded-md bg-black/50 backdrop-blur-sm"
+            >
+              <div>
+                <h3 className="text-3xl text-green-400/90">
+                  Survivor: {build.name}
+                </h3>
+                <ul className="flex flex-wrap gap-2 text-sm text-gray-200 mt-2">
+                  {build.perks.map((perks) => (
+                    <li
+                      key={perks}
+                      className="bg-green-800/80 px-3 py-1 rounded-full text-xs tracking-wide"
+                    >
+                      {perks}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <p className="mt-3 text-gray-300 text-md">
+                  {build.description}
+                </p>
+              </div>
+            </div>
+          ))}
+      </div>
     </section>
   );
 };
