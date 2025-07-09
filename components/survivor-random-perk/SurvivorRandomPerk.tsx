@@ -1,11 +1,24 @@
 import Image from "next/image";
+import { survivorPerks } from "@/data/survivorPerks";
+
+const getRandomSurvivorPerk = () => {
+  const index = Math.floor(Math.random() * survivorPerks.length);
+  return survivorPerks[index];
+};
 
 const SurvivorRandomPerk = () => {
+  const randomPerk1 = getRandomSurvivorPerk();
+
   return (
     <div>
       <h2 className="">Survivor Random Perk</h2>
       <div className="border">
-        <Image src="" width={100} height={100} alt="Random Survivor Perk" />
+        <Image
+          src={`/survivor-perks-logo/${randomPerk1}.webp`}
+          width={100}
+          height={100}
+          alt="Random Survivor Perk"
+        />
       </div>
     </div>
   );
