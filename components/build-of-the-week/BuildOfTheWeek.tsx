@@ -7,7 +7,7 @@ const BuildOfTheWeek = () => {
       <h2 className="text-5xl text-center py-10">
         Weekly Builds to Shake Things Up!
       </h2>
-      <div className="grid grid-cols-2 gap-x-10 h-full place-items-center justify-center">
+      <div className="grid lg:grid-cols-2 gap-x-10 gap-y-8 xl:gap-y-0 h-full place-items-center justify-center">
         {/* killer */}
         <div className="space-y-8 flex flex-col  justify-stretch h-full">
           {killerBuilds
@@ -34,7 +34,7 @@ const BuildOfTheWeek = () => {
                 </div>
 
                 <div>
-                  <p className="mt-3 text-gray-300 text-md">
+                  <p className="mt-3 text-gray-300 xl:text-lg text-sm">
                     {build.description}
                   </p>
                 </div>
@@ -68,7 +68,7 @@ const BuildOfTheWeek = () => {
                 </div>
 
                 <div>
-                  <p className="mt-3 text-gray-300 text-md">
+                  <p className="mt-3 text-gray-300 xl:text-lg text-sm">
                     {build.description}
                   </p>
                 </div>

@@ -8,14 +8,17 @@ export default function Home() {
     <div className="flex flex-col gap-5">
       <Nav />
       <Hero />
-      <ScrollVelocity
-        texts={[
-          "No Mither Gang, Unite!",
-          "Killer or Survivor: Who’s Got the Edge?",
-        ]}
-        velocity={20}
-        className="custom-scroll-text text-5xl py-1"
-      />
+      <div className="bg-red-500/30 py-5">
+        <ScrollVelocity
+          texts={[
+            "On Going Event: Twisted Masquerade 🎭",
+            "Killer 🔪 or Survivor 👟: Who’s Got the Edge?",
+          ]}
+          velocity={20}
+          className="custom-scroll-text text-5xl py-1"
+        />
+      </div>
+
       <BuildOfTheWeek />
     </div>
   );
