@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Navigation = ["Home", "Random Perk", "About Me"];
+const Navigation = [
+  { name: "Home", link: "/" },
+  { name: "Random Perk", link: "/random-perk" },
+  { name: "About Me", link: "/" },
+];
 
 const Nav = () => {
   return (
@@ -19,12 +23,12 @@ const Nav = () => {
 
       <div>
         <ul className="flex gap-3 ">
-          {Navigation.map((index) => (
+          {Navigation.map((nav, index) => (
             <li
               key={index}
               className="hover:bg-red-500 px-3 py-1 rounded-sm transition-all duration-150"
             >
-              <Link href="">{index}</Link>
+              <Link href={nav.link}>{nav.name}</Link>
             </li>
           ))}
         </ul>
