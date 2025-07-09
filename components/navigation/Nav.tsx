@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Navigation = ["Home", "Poll", "About"];
+const Navigation = ["Home", "Random Perk", "About Me"];
 
 const Nav = () => {
   return (
