@@ -22,7 +22,7 @@ export type Perks = string[];
 
 const SurvivorRandomPerk = () => {
   const [perks, setPerks] = useState<Perks>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleRandomize = () => {
     setLoading(true);
@@ -37,32 +37,34 @@ const SurvivorRandomPerk = () => {
     <div className="flex flex-col justify-center items-center space-y-5">
       <h2 className="text-4xl text-center">🎲 Survivor Random Perk</h2>
 
-      {loading ? (
-        <Loading />
-      ) : (
-        <div className="grid grid-cols-2 justify-center items-center gap-1 p-1">
-          {perks.map((perk, index) => (
-            <div
-              key={index}
-              className="flex flex-col w-full justify-center items-center px-3 py-2"
-            >
-              <Image
-                priority
-                src={`/survivor-perks-logo/${perk}.webp`}
-                width={100}
-                height={100}
-                alt="Random Survivor Perk"
-              />
-              <div>
-                <p className="px-3 py-1 rounded-sm bg-green-500/40 text-sm">
-                  {perk.slice(0, 1).toUpperCase() +
-                    perk.replace(/_/g, " ").slice(1)}
-                </p>
+      <div className="min-h-[350px]">
+        {loading ? (
+          <Loading />
+        ) : (
+          <div className="grid grid-cols-2 justify-center items-center gap-1 p-1">
+            {perks.map((perk, index) => (
+              <div
+                key={index}
+                className="flex flex-col w-full justify-center items-center px-3 py-2"
+              >
+                <Image
+                  priority
+                  src={`/survivor-perks-logo/${perk}.webp`}
+                  width={100}
+                  height={100}
+                  alt="Random Survivor Perk"
+                />
+                <div>
+                  <p className="px-3 py-1 rounded-sm bg-green-500/40 text-sm">
+                    {perk.slice(0, 1).toUpperCase() +
+                      perk.replace(/_/g, " ").slice(1)}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      )}
+            ))}
+          </div>
+        )}
+      </div>
 
       <button
         disabled={loading}
