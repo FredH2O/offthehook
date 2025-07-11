@@ -9,11 +9,15 @@ const BuildOfTheWeek = () => {
       </h2>
       <div className="grid lg:grid-cols-2 gap-x-10 gap-y-8 xl:gap-y-0 h-full place-items-center justify-center">
         {/* killer */}
-        <div className="space-y-8 flex flex-col  justify-stretch h-full">
+        <section
+          aria-label="Killer Builds"
+          className="space-y-8 flex flex-col  justify-stretch h-full"
+        >
+          <h3 className="sr-only">Killer Builds</h3>
           {killerBuilds
             .filter((_: KillerBuild, index: number) => [0, 3].includes(index))
             .map((build: KillerBuild, index: number) => (
-              <div
+              <article
                 key={index}
                 className="p-4 border hover:bg-slate-500/10 transition-all duration-50 border-gray-700/80 rounded-md bg-black/50 backdrop-blur-sm"
               >
@@ -38,16 +42,20 @@ const BuildOfTheWeek = () => {
                     {build.description}
                   </p>
                 </div>
-              </div>
+              </article>
             ))}
-        </div>
+        </section>
 
         {/* survivor */}
-        <div className="space-y-8 flex flex-col justify-stretch h-full">
+        <section
+          aria-label="Survivor Builds"
+          className="space-y-8 flex flex-col justify-stretch h-full"
+        >
+          <h3 className="sr-only">Survivor Builds</h3>
           {survivorBuilds
             .filter((_: SurvivorBuild, index: number) => [0, 2].includes(index))
             .map((build, index) => (
-              <div
+              <article
                 key={index}
                 className="p-4 border hover:bg-slate-500/10 transition-all duration-50 border-gray-700/80 rounded-md bg-black/50 backdrop-blur-sm max-h-full"
               >
@@ -72,9 +80,9 @@ const BuildOfTheWeek = () => {
                     {build.description}
                   </p>
                 </div>
-              </div>
+              </article>
             ))}
-        </div>
+        </section>
       </div>
     </section>
   );

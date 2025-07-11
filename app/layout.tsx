@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={` ${bebasNeue.variable} ${inter.variable} antialiased`}>
         <Nav />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );

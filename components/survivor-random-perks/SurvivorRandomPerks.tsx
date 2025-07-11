@@ -20,7 +20,7 @@ const getRandomSurvivorPerk = (count: number) => {
 
 export type Perks = string[];
 
-const SurvivorRandomPerk = () => {
+const SurvivorRandomPerks = () => {
   const [perks, setPerks] = useState<Perks>([]);
   const [loading, setLoading] = useState<boolean>(false);
 
@@ -77,4 +77,4 @@ const SurvivorRandomPerk = () => {
   );
 };
 
-export default SurvivorRandomPerk;
+export default SurvivorRandomPerks;
