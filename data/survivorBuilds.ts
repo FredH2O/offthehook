@@ -1,8 +1,8 @@
-export type SurvivorBuild = {
+export interface SurvivorBuild {
   name: string;
   perks: string[];
   description: string;
-};
+}
 
 export const survivorBuilds: SurvivorBuild[] = [
   {

@@ -1,10 +1,11 @@
 import BuildOfTheWeek from "@/components/BuildOfTheWeek/BuildOfTheWeek";
 import Hero from "@/components/Hero/Hero";
+import LoreOfTheDay from "@/components/LoreOfTheDay/LoreOfTheDay";
 import ScrollVelocity from "@/components/ReactbitsComponents/ScrollVelocity";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col space-y-1">
       <Hero />
       <div className="bg-red-500/30 py-5">
         <ScrollVelocity
@@ -18,6 +19,7 @@ export default function Home() {
       </div>
 
       <BuildOfTheWeek />
+      <LoreOfTheDay />
     </div>
   );
 }
