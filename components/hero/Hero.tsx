@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
 
       {/* Foreground content (optional) */}
-      <div className="relative z-10 flex flex-col container m-auto justify-center items-center h-full text-white">
+      <div className="relative z-10 space-y-3 flex flex-col container m-auto justify-center items-center h-full text-white">
         <h1>
           <BlurText
             text="Off The Hook"
@@ -33,10 +33,16 @@ const Hero = () => {
             className="text-5xl font-bold font-bebas tracking-widest uppercase"
           />
         </h1>
-        <p className="text-lg mt-4 font-light text-center">
-          Where survivors and killers gather by the fire… under the Entity’s
+        <p className="text-md px-5 font-light text-center">
+          Where survivors and killers gather by the fire… under the{" "}
+          <span className="italic text-red-500/80 hover:animate-ping">
+            Entity’s
+          </span>{" "}
           gaze.
         </p>
+        <button className="px-4 cursor-pointer mt-4 hover:bg-red-500/30 transition-all duration-150 py-2 rounded-full bg-red-500/40">
+          Take a seat… if you dare. 🔥
+        </button>
       </div>
     </section>
   );
