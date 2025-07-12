@@ -33,8 +33,9 @@ const Hero = () => {
             className="text-5xl font-bold font-bebas tracking-widest uppercase"
           />
         </h1>
-        <p className="text-lg mt-4 font-light">
-          Where survivors chat by the fire.
+        <p className="text-lg mt-4 font-light text-center">
+          Where survivors and killers gather by the fire… under the Entity’s
+          gaze.
         </p>
       </div>
     </section>
