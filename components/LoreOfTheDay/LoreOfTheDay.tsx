@@ -1,15 +1,19 @@
 import SectionAndArticle from "../SectionAndArticle";
 import { Lore } from "@/data/lore";
+import { getDayOfYear } from "date-fns";
 
 const LoreOfTheDay = () => {
-  const dailyLore = Math.floor(Math.random() * Lore.length); // change this everyday
-  const pickedRandomLore = Lore[dailyLore];
+  const today = new Date();
+  const dayOfYear = getDayOfYear(today);
+
+  const index = dayOfYear % Lore.length; // modulo to cycle
+  const dailyLore = Lore[index];
 
   return (
     <>
       <SectionAndArticle
-        title={pickedRandomLore.title}
-        description={pickedRandomLore.description}
+        title={dailyLore.title}
+        description={dailyLore.description}
       />
     </>
   );
