@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/navigation/Nav";
+import Nav from "@/components/Navigation/Nav";
 
 const inter = Inter({
   variable: "--font-inter",

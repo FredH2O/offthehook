@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { survivorPerks } from "@/data/survivorPerks";
 import { useState } from "react";
-import Loading from "../uiverse-component/Loading";
+import Loading from "../UiverseComponents/Loading";
 
 const getRandomSurvivorPerk = (count: number) => {
   const selected: string[] = [];

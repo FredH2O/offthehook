@@ -1,4 +1,4 @@
-import SurvivorRandomPerk from "@/components/survivor-random-perks/SurvivorRandomPerks";
+import SurvivorRandomPerk from "@/components/SurvivorRandomPerks/SurvivorRandomPerks";
 
 const RandomPerk = () => {
   return (

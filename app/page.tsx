@@ -1,6 +1,6 @@
-import BuildOfTheWeek from "@/components/build-of-the-week/BuildOfTheWeek";
-import Hero from "@/components/hero/Hero";
-import ScrollVelocity from "@/components/reactbits-components/ScrollVelocity";
+import BuildOfTheWeek from "@/components/BuildOfTheWeek/BuildOfTheWeek";
+import Hero from "@/components/Hero/Hero";
+import ScrollVelocity from "@/components/ReactbitsComponents/ScrollVelocity";
 
 export default function Home() {
   return (
