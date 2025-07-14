@@ -10,8 +10,8 @@ const LoreOfTheDay = () => {
   const dailyLore = Lore[index];
 
   return (
-    <div className="bg-red-500/50 py-5">
-      <h2 className="text-5xl text-center">Lore Of The Day 📕</h2>
+    <div className="bg-red-800/50 py-10">
+      <h2 className="text-5xl text-center">Lore Of The Day</h2>
       <SectionAndArticle
         title={dailyLore.title}
         description={dailyLore.description}
