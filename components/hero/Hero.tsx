@@ -30,7 +30,7 @@ const Hero = () => {
             animateBy="words"
             direction="top"
             onAnimationComplete={handleAnimationComplete}
-            className="text-5xl font-bold font-bebas tracking-widest uppercase"
+            className="text-glow animate-pulse text-5xl font-bold font-bebas tracking-widest uppercase"
           />
         </h1>
         <p className="text-md px-5 font-light text-center">

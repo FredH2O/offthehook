@@ -25,3 +25,11 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter);
 }
+
+@layer utilities {
+  .text-glow {
+    color: #ffffff;
+    text-shadow: 0 0 4px #cccccc, 0 0 8px #eeeeee, 0 0 12px #ffffff,
+      0 0 20px #ffffff, 0 0 28px #ffffff;
+  }
+}
